@@ -1,0 +1,18 @@
+
+{{- $thumb := .Get "src" -}}
+{{- $title := .Get "title" -}}
+  <figure>
+      <img
+        src="/images/lazyload.gif#center" 
+        data-src="{{ $thumb }}" 
+        class="zoom lazy" 
+        style="z-index: 9999;"
+        alt="{{ $title }}"
+        />
+
+      {{ if .Get "title" }}
+      <figcaption>
+        <h4>{{ $title }}</h4>
+      </figcaption>
+      {{ end }}
+  </figure>

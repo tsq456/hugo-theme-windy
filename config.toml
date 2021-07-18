@@ -1,0 +1,59 @@
+baseURL = "//tutang.com"
+languageCode = "zh-cn"
+title = "阿凸日记"
+theme = "hugo-theme-windy"
+
+# 每页显示文章数量
+paginate = 5
+
+hasCJKLanguage = true
+googleAnalytics = "UA-59524632-1"
+summaryLength = 400
+OpenGraph = true
+enableRobotsTXT = true
+
+[sitemap]
+  ChangeFreq = "weekly"
+  Priority = "0.5"
+
+[Params]
+enableComment = false
+description = "阿凸的个人博客，主要记录个人生活及工作感悟。梦想遥不可及，因而陷入妄想"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  posts = "/:year/:month/:filename/"
+
+[frontmatter]
+  lastmod = [":fileModTime", ":default"]
+
+[markup]
+  [markup.highlight]
+  anchorLineNos = false
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineAnchors = ""
+  lineNoStart = 1
+  lineNos = true
+  lineNumbersInTable = false
+  noClasses = true
+  style = "manni"
+  tabWidth = 4
+  
+
+[[menu.main]]
+name = "文章归档"
+url = "/posts"
+weight = "100"
+[[menu.main]]
+name = "标签分类"
+url = "/tags"
+weight = "300"
+[[menu.main]]
+name = "关于"
+url = "/about"
+weight = "400"
