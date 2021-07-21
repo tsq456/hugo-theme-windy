@@ -1,53 +1,51 @@
 {{ define "main" }}
     {{ $paginator := .Paginate (where .Site.RegularPages "Params.date" "!=" nil) }}
 
-<div class="homepage wrap">
+<div class="bg-width shadow-xl overflow-hidden">
     {{- partial "navigation.html" . -}}
     {{ range $paginator.Pages }}
-        <article class="homepage-posts">
-            <h1 class="post-title">
-                <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+        <article class="w-4/5 mx-auto mt-14">
+            <h1 class="text-3xl hover:text-gray-500 text-center font-bold pb-1">
+                <a class="" href="{{ .Permalink }}">{{ .Title }}</a>
             </h1>
-            <p class="post-date text-green-500">{{ .Params.date | dateFormat "2 Jan 2006" | upper}}</p>
-
+            <p class="text-center mt-2 mb-6 text-gray-500 text-md">{{ .Params.date | dateFormat "2 Jan 2006" | upper}}</p>
 
             {{ if .Params.cover_image }}
-                <a class="post-cover" href='{{ .RelPermalink }}'>
-                    <img 
-                    src="{{ .Params.cover_image }}" class="linked-img"
-                    /></a>
+                <a href='{{ .RelPermalink }}'>
+                    <img src="{{ .Params.cover_image }}" class="w-[90%] mb-8 mx-auto rounded-md shadow-sm hover:shadow-xl ease-out duration-300" />
+                </a>
             {{ end }}
-            <div class="post-summary">{{ .Summary }}</div>
+            <div class="prose max-w-none mx-auto">{{ .Summary }}</div>
 
-            <div class="post-meta">
-
-                {{ with .Params.categories }}
-                    <span class="post-cate">
-                        分类：
+            <div class="mt-12 flex flex-row justify-between text-sm">
+                <div class="flex items-center">
+                    {{ with .Params.categories }}
+                        <span class="text-gray-500">分类：</span>
                         {{ range . }}
-                            <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" >{{ . }}</a>
+                            <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500" >{{ . }}</a>
                         {{ end }}
-                    </span>
-                {{ end }}
+                    {{ end }}
 
-                {{ with .Params.tags }}
-                    <span class="post-tags">
-                        标签：
+                    {{ with .Params.tags }}
+                        <span class="ml-4 text-gray-500 inline-flex">标签：</span>
                         {{ range . }}
-                            <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" >{{ . }}</a>
+                        <div class="inline-flex mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="#6b7280" viewBox="0 0 24 24">
+                                <path xmlns="http://www.w3.org/2000/svg" d="M20,10V8h-4V4h-2v4h-4V4H8v4H4v2h4v4H4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4H20z M14,14h-4v-4h4V14z"/>
+                            </svg>
+                            <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500" >{{ . }}</a>
+                        </div>
                         {{ end }}
-                    </span>
-                {{ end }}
-
-                <span class="more">
-                    <a href="{{.Permalink}}">阅读全文
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="7" viewBox="0 0 30 7">
-                            <path d="M62.009,388.841H88.918l-3.455-5.182h1.909l4.636,7h-30Z" transform="translate(-62.009 -383.659)" fill="#1b1b1b"/>
-                        </svg>
-                    </a>
-                </span>
+                    {{ end }}
+                </div>
+                <div class="flex flex-row justify-between items-center group">
+                    <a href="{{.Permalink}}" class="hover:text-gray-500">阅读全文</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-[#707070] group-hover:stroke-[#fc4041] group-hover:translate-x-2 ease-out duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </div>
             </div>
-            <hr class="post-divider">
+            <hr class="mt-4">
         </article>
     {{ end }}
     {{ partial "backtop.html" . }} 

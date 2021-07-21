@@ -1,16 +1,18 @@
 {{if not .IsPage}}
-<div id="navigation">
-    <a href="{{.Site.BaseURL}}" class="sitelogo">
-        {{ partial "sitelogo.html" . }}
-    </a>
-    <ul class="menu-list">
-        <li>
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-                <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
-            {{ end }}
-        </li>
-    </ul>
-    <hr>
+<div class="bg-cover bg-center h-72 relative bg-width" style="background-image: url('{{ .Site.Params.navBgImg }}');">
+    <div class="absolute p-4 w-full bottom-0 flex flex-row justify-between">
+        <a href="{{.Site.BaseURL}}">
+            <img src="{{ "/images/logo.png" | relURL }}" alt="sitelogo">
+        </a>
+        <ul class="flex flex-col-reverse">
+            <li>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    <a class="pl-4 text-lg" href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
+                {{ end }}
+            </li>
+        </ul>
+    </div>
+    <hr class="absolute bottom-0 bg-gray-200 h-[1px] w-[calc(1000px-2rem)] max-w-full transform -translate-x-1/2 left-1/2">
 </div>
 {{end}}
