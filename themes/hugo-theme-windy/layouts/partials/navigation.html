@@ -8,7 +8,7 @@
             <li>
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                    <a class="pl-4 text-lg" href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
+                    <a class="pl-4 text-lg hover:text-gray-500" href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
                 {{ end }}
             </li>
         </ul>

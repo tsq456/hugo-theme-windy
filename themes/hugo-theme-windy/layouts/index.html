@@ -5,7 +5,7 @@
     {{- partial "navigation.html" . -}}
     {{ range $paginator.Pages }}
         <article class="w-4/5 mx-auto mt-14">
-            <h1 class="text-3xl hover:text-gray-500 text-center font-bold pb-1">
+            <h1 class="md:text-3xl text-2xl hover:text-gray-500 text-center font-bold pb-1">
                 <a class="" href="{{ .Permalink }}">{{ .Title }}</a>
             </h1>
             <p class="text-center mt-2 mb-6 text-gray-500 text-md">{{ .Params.date | dateFormat "2 Jan 2006" | upper}}</p>
@@ -38,7 +38,7 @@
                         {{ end }}
                     {{ end }}
                 </div>
-                <div class="flex flex-row justify-between items-center group">
+                <div class="sm:flex flex-row justify-between items-center group hidden ">
                     <a href="{{.Permalink}}" class="hover:text-gray-500">阅读全文</a>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-[#707070] group-hover:stroke-[#fc4041] group-hover:translate-x-2 ease-out duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />

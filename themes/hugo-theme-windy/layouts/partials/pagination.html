@@ -52,7 +52,7 @@
 
 <!-- If there's more than one page -->
 {{ if gt $paginator.TotalPages 1 }}
-<div class="w-1/2 mx-auto flex flex-row justify-center my-10">
+<div class="md:w-1/2 w-full mx-auto flex flex-row justify-center my-10">
     {{ if $paginator.HasPrev }}
         <a class="mr-4 leading-8 hover:text-gray-500" href="{{ $paginator.Prev.URL }}"><i class="fas fa-chevron-left"></i> 上一页</a>
     {{ else }}

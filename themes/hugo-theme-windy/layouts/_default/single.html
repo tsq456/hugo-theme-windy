@@ -1,7 +1,13 @@
 {{ define "main" }}
 
-<div class="singlepage wrap">
-  <div class="head-wrapper" style="background: url({{- if .Params.cover_image -}}'{{- .Params.cover_image -}}'{{- else -}}'/images/posthead.webp'{{- end -}});background-size:cover;background-position:center;">
+<div class="bg-width shadow-xl">
+  <div class="h-[25rem] w-full bg-cover bg-center" 
+  style="background: url(
+    {{- if .Params.cover_image -}}
+      '{{- .Params.cover_image -}}'
+    {{- else -}}
+      '/images/posthead.webp'
+    {{- end -}});">
     <div class="topinfo">
       <a href="{{.Site.BaseURL}}">
         {{ partial "sitelogo.html" . }}
