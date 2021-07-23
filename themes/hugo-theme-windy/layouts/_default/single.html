@@ -1,28 +1,26 @@
 {{ define "main" }}
 
 <div class="bg-width shadow-xl">
-  <div class="h-[25rem] w-full bg-cover bg-center" 
-  style="background: url(
+  <div class="bg-cover bg-center h-[25rem] w-full relative bg-gradient-to-t from-white" 
+  style="background-image: url(
     {{- if .Params.cover_image -}}
       '{{- .Params.cover_image -}}'
     {{- else -}}
-      '/images/posthead.webp'
+      '{{- .Params.defaultCover -}}'
     {{- end -}});">
-    <div class="topinfo">
-      <a href="{{.Site.BaseURL}}">
-        {{ partial "sitelogo.html" . }}
-      </a>
-      <span class="tags">
-        {{ with .Params.tags }}
-          {{ range . }}
-          <div>
-            <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" >{{ . }}</a>
-          </div>
-          {{ end }}
+      <a href="{{.Site.BaseURL}}" class="inline-block scale-50 -ml-4">
+        <img src="{{ "/images/logo.png" | relURL }}" alt="sitelogo" class="origin-top-left ">
+      </a> 
+    <span class="tags">
+      {{ with .Params.tags }}
+        {{ range . }}
+        <div>
+          <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" >{{ . }}</a>
+        </div>
         {{ end }}
-      </span>
-    </div>
-    <div class="post-title">
+      {{ end }}
+    </span>
+    <div class="text-white text-center bottom-0 absolute pb-9 w-full">
 
         {{ with .Params.categories }}
             {{ range . }}
@@ -30,7 +28,7 @@
             {{ end }}
         {{ end }}
 
-        <h1>{{ .Title }}</h1>
+        <h1 class="text-5xl font-bold mb-6 mt-8">{{ .Title }}</h1>
         <div class="post-meta">
             <span>
                 {{ .Date.Format "2006-01-02" }}
@@ -54,7 +52,7 @@
         </div>
     </div>
   </div>
-  <div class="content">
+  <div class="prose mx-auto max-w-[90%] mt-10">
       {{ .Content }}
   </div>
   <div class="post-end-info">

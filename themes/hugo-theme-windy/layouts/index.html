@@ -22,12 +22,12 @@
                     {{ with .Params.categories }}
                         <span class="text-gray-500">分类：</span>
                         {{ range . }}
-                            <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500" >{{ . }}</a>
+                            <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500  mr-5" >{{ . }}</a>
                         {{ end }}
                     {{ end }}
 
                     {{ with .Params.tags }}
-                        <span class="ml-4 text-gray-500 inline-flex">标签：</span>
+                        <span class="text-gray-500 inline-flex">标签：</span>
                         {{ range . }}
                         <div class="inline-flex mr-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="#6b7280" viewBox="0 0 24 24">
