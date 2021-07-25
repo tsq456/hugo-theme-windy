@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="bg-width shadow-xl">
-  <div class="bg-cover bg-center h-[25rem] w-full relative bg-gradient-to-t from-white" 
+  <div class="bg-cover bg-center h-[25rem] w-full relative" 
   style="background-image: url(
     {{- if .Params.cover_image -}}
       '{{- .Params.cover_image -}}'
@@ -20,7 +20,7 @@
         {{ end }}
       {{ end }}
     </span>
-    <div class="text-white text-center bottom-0 absolute pb-9 w-full">
+    <div class="text-white text-center bottom-0 absolute pb-9 w-full bg-gradient-to-t from-blackGradient">
 
         {{ with .Params.categories }}
             {{ range . }}
