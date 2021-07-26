@@ -4,7 +4,7 @@ title = "阿凸日记"
 theme = "hugo-theme-windy"
 
 # 每页显示文章数量
-paginate = 5
+paginate = 1
 
 hasCJKLanguage = true
 googleAnalytics = "UA-59524632-1"
@@ -18,9 +18,10 @@ enableRobotsTXT = true
 
 [Params]
 enableComment = false
-description = "阿凸的个人博客，主要记录个人生活及工作感悟。梦想遥不可及，因而陷入妄想"
+description = "阿凸的个人博客，主要记录个人生活及工作感悟。"
 NavBg = "/images/globleNavBG.webp"
 defaultCover = '/images/posthead.webp'
+subtitle = "梦想遥不可及，因而陷入妄想"
 
 [taxonomies]
   tag = "tags"

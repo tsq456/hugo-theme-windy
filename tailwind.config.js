@@ -8,6 +8,16 @@ module.exports = {
         '200': '2',
         '300': '3',
       },
+      boxShadow: {
+        sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+        DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+        md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+        'nav': 'inset 0 1rem 0 0 #fff, inset 0 -2rem 0 0 rgb(252 64 65 / 40%)',
+        'bg': '0 0 10px rgb(0 0 0 / 10%)',
+      },
       extend: {
         colors: {
           'accent': '#fc4041',
@@ -17,9 +27,15 @@ module.exports = {
           DEFAULT: {
             css: {
               a: {
-                boxShadow: 'inset 0 0.8em 0 0 #fff, inset 0 -0.375em 0 0 rgb(252 64 65 / 40%)',
+                '&:hover': {
+                  boxShadow: 'inset 0 .8em 0 0 #fff, inset 0 -0.375em 0 0 rgb(252 64 65 / 40%)',
+                  transition: 'all .2s ease-out',
+                  color: '#fc4041',
+                },
+                boxShadow: 'inset 0 1em 0 0 #fff, inset 0 -0.375em 0 0 rgb(252 64 65 / 40%)',
+                transition: 'all .2s ease-out',
                 textDecoration: 'none',
-                color: '#fc4041',
+                color: '#33333',
                 margin: '0 .2rem',
               },
               section: {

@@ -1,0 +1,15 @@
+{{ define "main" }}
+    <div class="bg-width shadow-bg overflow-hidden">
+        {{ partial "navigation.html" . }}
+        <div class="w-4/5 mx-auto my-10">
+            <div class="text-3xl font-bold mb-10 italic">{{ .Title }}</div>
+            {{ range .Pages }}
+                <div class="my-8 flex flex-row justify-between">
+                    <span><a href="{{ .Permalink }}">{{ .Title }}</a></span>   
+                    <span>{{ .Date.Format "2006-01-02" }}</span>   
+                </div>
+
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
