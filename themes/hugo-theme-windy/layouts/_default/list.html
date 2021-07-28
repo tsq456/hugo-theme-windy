@@ -4,9 +4,9 @@
     {{ partial "navigation.html" . }}
     {{ $paginator := .Paginate (.RegularPages) 20 }}
     <div class="p-6 md:p-8 mx-auto flex flex-row justify-between">
-        <div class="w-full md:w-3/5 md:border-r md:border-gray-100 md:border-solid md:pr-8">
+        <div class="w-full md:w-3/5 md:border-r md:dark:border-darkDivider md:border-gray-100 md:border-solid md:pr-8">
             {{ range $paginator.Pages }}
-            <div class="flex flex-row justify-between mb-6 last:mb-0">
+            <div class="flex flex-row justify-between mb-6 last:mb-0 dark:text-darkPrimary">
                 <a href="{{ .Permalink }}" class="whitespace-nowrap overflow-ellipsis overflow-hidden">
                     {{ .Title }}
                 </a>
@@ -17,7 +17,7 @@
             {{ end }}
             {{ partial "pagination.html" . }}
         </div>          
-        <div class="w-[35%] md:block hidden">
+        <div class="w-[35%] md:block hidden dark:text-darkPrimary">
             <div class="flex flex-col">
                 <p class="font-bold mb-4">ALL CATEGORIES</p>
             {{ range $categories, $taxonomy := .Site.Taxonomies.categories }}

@@ -59,16 +59,15 @@
         </div>
     </div>
   </div>
-  <div class="prose mx-auto max-w-[90%] mt-10">
+  <div class="content prose dark:prose-dark mx-auto max-w-[90%] mt-10">
       {{ .Content }}
   </div>
-  <div class="post-end-info">
-    <i class="post-end">POST END</i>
-    <i class="last-mod-time">最后编辑于：{{.Page.Lastmod.Format "2006-01-02 15:04"}}</i>
+  <div class="max-w-[90%] mx-auto mt-8">
+    <hr class="dark:border-darkDivider mb-2">
+    <p class="dark:text-darkSecondry italic">最后编辑于：{{.Page.Lastmod.Format "2006-01-02 15:04"}}</p>
+    {{ partial "postpagination.html" . }}
+    {{ partial "backtop.html" . }}
   </div>
-
-  {{ partial "postpagination.html" . }}
-  {{ partial "backtop.html" . }}
   {{ if .Site.Params.enableComment }}
     {{ partial "comment.html" . }}
   {{ end }}

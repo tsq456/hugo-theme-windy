@@ -3,6 +3,6 @@
 @tailwind utilities;
 @layer components {
   .bg-width {
-    @apply w-full lg:w-[920px] mx-auto bg-white;
+    @apply w-full lg:w-[920px] mx-auto bg-white dark:bg-darkBglighter;
   }
 }

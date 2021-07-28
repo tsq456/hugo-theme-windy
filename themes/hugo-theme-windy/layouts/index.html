@@ -5,47 +5,47 @@
     {{- partial "navigation.html" . -}}
     {{ range $paginator.Pages }}
         <article class="w-4/5 mx-auto mt-14">
-            <h1 class="md:text-3xl text-2xl hover:text-gray-500 text-center font-bold pb-1">
+            <h1 class="md:text-3xl text-2xl hover:text-gray-500 dark:text-white dark:hover:text-gray-200 text-center font-bold pb-1">
                 <a class="" href="{{ .Permalink }}">{{ .Title }}</a>
             </h1>
-            <p class="text-center mt-2 mb-6 text-gray-500 text-md">{{ .Params.date | dateFormat "2 Jan 2006" | upper}}</p>
+            <p class="text-center mt-2 mb-6 text-gray-500 dark:text-darkSecondry  text-md">{{ .Params.date | dateFormat "2 Jan 2006" | upper}}</p>
 
             {{ if .Params.cover_image }}
                 <a href='{{ .RelPermalink }}'>
                     <img src="{{ .Params.cover_image }}" class="w-[90%] mb-8 mx-auto rounded-md shadow-sm hover:shadow-xl ease-out duration-300" />
                 </a>
             {{ end }}
-            <div class="prose max-w-none mx-auto">{{ .Summary }}</div>
+            <div class="prose dark:prose-dark max-w-none mx-auto">{{ .Summary }}</div>
 
             <div class="mt-12 flex flex-row justify-between text-sm">
                 <div class="flex items-center">
                     {{ with .Params.categories }}
-                        <span class="text-gray-500">分类：</span>
+                        <span class="text-gray-500 dark:text-gray-400">分类：</span>
                         {{ range . }}
-                            <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500  mr-5" >{{ . }}</a>
+                            <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500 dark:hover:text-gray-100  mr-5 dark:text-gray-300" >{{ . }}</a>
                         {{ end }}
                     {{ end }}
 
                     {{ with .Params.tags }}
-                        <span class="text-gray-500 inline-flex">标签：</span>
+                        <span class="text-gray-500 dark:text-gray-400 inline-flex">标签：</span>
                         {{ range . }}
                         <div class="inline-flex mr-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="#6b7280" viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 dark:text-gray-300 dark:fill-current" fill="#6b7280" viewBox="0 0 24 24">
                                 <path xmlns="http://www.w3.org/2000/svg" d="M20,10V8h-4V4h-2v4h-4V4H8v4H4v2h4v4H4v2h4v4h2v-4h4v4h2v-4h4v-2h-4v-4H20z M14,14h-4v-4h4V14z"/>
                             </svg>
-                            <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500" >{{ . }}</a>
+                            <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500 dark:hover:text-gray-100 dark:text-gray-300" >{{ . }}</a>
                         </div>
                         {{ end }}
                     {{ end }}
                 </div>
                 <div class="sm:flex flex-row justify-between items-center group hidden ">
-                    <a href="{{.Permalink}}" class="hover:text-gray-500">阅读全文</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-[#707070] group-hover:stroke-[#fc4041] group-hover:translate-x-2 ease-out duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <a href="{{.Permalink}}" class="hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-100">阅读全文</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="dark:text-gray-300 dark:stroke-current h-6 w-6 stroke-[#707070] group-hover:stroke-[#fc4041] group-hover:translate-x-2 ease-out duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                 </div>
             </div>
-            <hr class="mt-4">
+            <hr class="mt-4 dark:border-darkDivider">
         </article>
     {{ end }}
     {{ partial "backtop.html" . }} 

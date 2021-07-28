@@ -54,9 +54,9 @@
 {{ if gt $paginator.TotalPages 1 }}
 <div class="md:w-1/2 w-full mx-auto flex flex-row justify-center my-10">
     {{ if $paginator.HasPrev }}
-        <a class="mr-4 leading-8 hover:text-gray-500" href="{{ $paginator.Prev.URL }}"><i class="fas fa-chevron-left"></i> 上一页</a>
+        <a class="mr-4 leading-8 hover:text-gray-500 dark:text-gray-200" href="{{ $paginator.Prev.URL }}">上一页</a>
     {{ else }}
-        <a class="mr-4 leading-8 text-gray-400 cursor-not-allowed" title="On first page" disabled><i class="fas fa-chevron-left"></i> 上一页</a>
+        <a class="mr-4 leading-8 text-gray-400 cursor-not-allowed" title="On first page" disabled>上一页</a>
     {{ end }}
 
     <ul class="flex flex-row">
@@ -67,18 +67,18 @@
             {{ if or (or (eq .PageNumber 1) (eq .PageNumber $paginator.TotalPages)) (and (ge .PageNumber $lower_limit) (le .PageNumber $upper_limit)) }}
 
                 <li class="
-                w-8 h-8 inline-block mx-1 text-center rounded-full
+                w-8 h-8 inline-block mx-1 text-center rounded-full dark:text-gray-200
                 {{ if ne $paginator.PageNumber .PageNumber }}
-                     hover:bg-gray-200
+                     hover:bg-gray-200 dark:hover:bg-darkBgDarker
                 {{ else }}
-                    text-white font-bold bg-gray-700 hover:bg-gray-700
+                    text-white font-bold bg-gray-700 dark:bg-darkBgDarker dark:text-gray-200 
                 {{ end }}">
                     <a href="{{ .URL }}" class="inline-block w-8 h-8 leading-8">{{ .PageNumber }}</a>
                 </li>
 
                 <!-- If we're on the first page and inserting an ellipsis, or just before the last page and inserting an ellipsis -->
                 {{ if or (and (eq .PageNumber 1) (eq $include_lower_ellipsis true)) (and (eq .PageNumber $upper_limit) (eq $include_upper_ellipsis true)) }}
-                    <li><span class="w-8 h-8 text-gray-300 text-center leading-8 cursor-not-allowed">&hellip;</span></li>
+                    <li><span class="w-8 h-8 text-gray-300 dark:text-gray-600 text-center leading-8 cursor-not-allowed">&hellip;</span></li>
                 {{ end }}
 
             {{ end }}
@@ -88,7 +88,7 @@
     </ul>
 
     {{ if $paginator.HasNext }}
-        <a class="ml-4 leading-8 hover:text-gray-500" href="{{ $paginator.Next.URL }}">下一页</a>
+        <a class="ml-4 leading-8 hover:text-gray-500 dark:text-gray-200" href="{{ $paginator.Next.URL }}">下一页</a>
     {{ else }}
         <a class="ml-4 leading-8 text-gray-400 cursor-not-allowed" title="On last page" disabled>下一页</a>
     {{ end }}
