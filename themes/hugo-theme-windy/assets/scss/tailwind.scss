@@ -6,64 +6,142 @@
     .bg-width {
         @apply w-full lg:w-[920px] mx-auto bg-white dark:bg-darkBglighter;
     }
+    html.dark #waline .vpanel {
+        @apply rounded-none m-0 bg-darkBglighter border-r-0 border-l-0 border-darkDivider
+    }
+    html.dark #waline .vpanel .vheader {
+        @apply border-b border-solid border-darkDivider rounded-none
+    }
+    html.dark #waline .vpanel .vheader .vheader-item label {
+        @apply text-darkPrimary
+    }
+    html.dark #waline .vpanel .vheader .vheader-item input {
+        @apply bg-darkBglighter text-darkPrimary
+    }
+    html.dark #waline .veditor {
+        @apply bg-darkBglighter text-darkPrimary max-w-[calc(100%-40px)] mx-[20px] rounded-none
+    }
+    html.dark #waline .veditor:-ms-input-placeholder, html.dark #waline .veditor::-webkit-input-placeholder {
+        @apply text-darkPrimary
+    }
+    html.dark #waline .vfooter svg {
+        @apply text-darkPrimary fill-current
+    }
+    html.dark #waline .vfooter svg:hover {
+        @apply text-accent fill-current ease-in-out duration-200 transition-all
+    }
+    html.dark #waline .vbtn {
+        @apply border-darkDivider text-darkSecondry
+    }
+    html.dark #waline .vbtn:hover {
+        @apply ring-1 ring-white text-white
+    }
+    html.dark #waline .vbtn.primary {
+        @apply bg-accent border-accent text-white
+    }
+    html.dark #waline .vbtn.primary:hover {
+        @apply ring-2 ring-white
+    }
+    html.dark #waline .vcount {
+        @apply text-darkPrimary ml-[10px]
+    }
+    html.dark #waline .vempty {
+        @apply text-darkSecondry
+    }
+    html.dark #waline .vpower {
+        @apply mr-[10px] pb-3
+    }
+    html.dark #waline .vpower a {
+        @apply text-accent
+    }
+    html.dark #waline .vcard {
+        @apply border-darkDivider
+    }
+    html.dark #waline .vcard .vhead a {
+        @apply text-darkPrimary
+    }
+    html.dark #waline .vmeta span {
+        @apply bg-darkBgDarker text-darkPrimary
+    }
+    html.dark #waline .vcard .vcontent p {
+        @apply text-darkPrimary
+    }
+    html.dark #waline .vreply svg {
+        @apply text-darkPrimary fill-current
+    }
+    html.dark #waline .vreply svg:hover {
+        @apply text-accent fill-current ease-in-out duration-200 transition-all
+    }
+    html.dark #waline .vloading svg {
+        @apply text-white fill-current
+    }
+
+    html.dark #footer {
+        @apply text-darkSecondry
+    }
+    html.dark #footer svg path {
+        @apply text-darkSecondry fill-current
+    }
 }
 
-#waline {
-    .vcards {
-        padding: 10px;
-        .vcard svg:hover {
-            fill: $accent-color;
-        }
-    }
-    .v[data-class=v] .vbtn:hover {
-        border-color: $accent-color;
-        color: $accent-color;
-    }
-    .v[data-class=v] .vbtn.primary {
-        border-color: $accent-color;
-        background-color: $accent-color;
-        &:hover {
-            background-color: lighten($color: $accent-color, $amount: 10%);
-            border-color: lighten($color: $accent-color, $amount: 10%);
-            transition: .2s all ease-in;
-            color: white;
-        }
-    }
-    .veditor {
-        font-family: $default-font;
-        &:focus {
-            background-color: transparent !important;
-        }
-    }
-    .vitem input:focus {
-        background-color: transparent !important;
-    }
-    .vpower {
-        margin: 0 10px !important;
-        a {color: $accent-color;}
-    }
-    .vcomment {
-        border-top: 1px solid $divider-color;
-        border-bottom: 1px solid $divider-color;
-        padding: 10px;
-        .vpanel {
-            border-radius: unset;
-            border: 0px;
-        }
-    }
-    .v[data-class=v] .vheader {
-        border-bottom: 1px solid $divider-color
-    }
-    .vaction svg:hover {
-        fill: $accent-color;
-    }
 
-    @media screen and (max-width: 580px) {
-        .v[data-class=v] .vheader .vheader-item {
-            border-bottom: 1px solid $divider-color
-        }
-        .v[data-class=v] .vheader {
-            border-bottom: unset
-        }
-    }
+html #waline .vpanel {
+    @apply rounded-none m-0 border-r-0 border-l-0 border-gray-200
+}
+html #waline .vpanel .vheader {
+    @apply border-b border-solid border-gray-200 rounded-none
+}
+html #waline .vpanel .vheader .vheader-item label {
+    @apply text-gray-700
+}
+html #waline .vpanel .vheader .vheader-item input {
+    @apply text-gray-700 bg-white
+}
+html #waline .veditor {
+    @apply text-gray-700 max-w-[calc(100%-40px)] mx-[20px] rounded-none bg-white
+}
+html #waline .veditor:-ms-input-placeholder, html.dark #waline .veditor::-webkit-input-placeholder {
+    @apply text-darkPrimary
+}
+html #waline .vfooter svg {
+    @apply text-gray-700 fill-current
+}
+html #waline .vfooter svg:hover {
+    @apply text-accent fill-current ease-in-out duration-200 transition-all
+}
+html #waline .vbtn {
+    @apply border-gray-700
+}
+html #waline .vbtn:hover {
+    @apply border-accent text-accent
+}
+html #waline .vbtn.primary {
+    @apply bg-accent border-accent
+}
+html #waline .vbtn.primary:hover {
+    @apply ring-2 ring-[#FFA2A3] text-white
+}
+html #waline .vcount {
+    @apply text-gray-700 ml-[10px]
+}
+html #waline .vempty {
+    @apply text-gray-500
+}
+html #waline .vpower {
+    @apply mr-[10px] pb-3
+}
+html #waline .vpower a {
+    @apply text-accent
+}
+html #waline .vcard .vhead a {
+    @apply text-gray-700
+}
+html #waline .vcard .vcontent p {
+    @apply text-gray-700
+}
+html #waline .vreply svg {
+    @apply text-gray-700 fill-current
+}
+html #waline .vreply svg:hover {
+    @apply text-accent fill-current ease-in-out duration-200 transition-all
 }

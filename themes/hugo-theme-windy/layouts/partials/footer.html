@@ -1,4 +1,4 @@
-<footer id="footer">
+<footer id="footer" class="mt-4 text-sm w-[900px] max-w-[95%] mx-auto">
     {{ if .IsPage }}
       <script src="{{ "/js/lazyload.min.js" | relURL }}"></script>
       <script src="{{ "/js/tocbot.min.js" | relURL }}"></script>
@@ -14,7 +14,7 @@
     {{ range (where .Site.Pages "Kind" "page" )}}
     {{$scratch.Add "total" .WordCount}}
     {{ end }}
-    <div class="w-[900px] mt-4 mx-auto flex flex-row justify-between">
+    <div class="mx-auto flex flex-row justify-between">
       <p>共 {{ len (where .Site.RegularPages "Section" "posts") }} 篇文章,合计 {{$scratch.Get "total" }} 字</p>
         <div class="w-1/4 flex flex-row justify-between">
           <a href="#">更新记录</a>
@@ -22,7 +22,7 @@
           <a href="{{- .Site.BaseURL -}}/index.xml" target="_blank" rel="noopener norefferrer">RSS订阅</a>
         </div>
     </div>
-    <div class="my-4 mx-auto text-center w-[900px] border-b pb-4">
+    <div class="my-4 mx-auto text-center pb-4">
       <span id="busuanzi_container_site_pv">
         本站总访问量<span id="busuanzi_value_site_pv"></span>次
       </span>
@@ -36,7 +36,7 @@
       </span>
     </div>
   
-    <div class="flex flex-row items-center mx-auto justify-center w-[900px] mb-6">
+    <div class="flex flex-row items-center mx-auto justify-center mb-6">
       <span>本站由</span> 
       <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="noopener norefferrer" class="mx-2">
         <svg id="upaiyunlogo" xmlns="http://www.w3.org/2000/svg" width="59.429" height="20.129" viewBox="0 0 59.429 20.129">

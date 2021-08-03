@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./themes/hugo-theme-windy/assets/scss/tailwind.scss -o ./themes/hugo-theme-windy/assets/scss/main.css --jit -w",
-    "build": "cross-env NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./themes/hugo-theme-windy/assets/scss/tailwind.scss -o ./themes/hugo-theme-windy/assets/scss/main.css --jit --minify"
+    "dev": "cross-env NODE_ENV=development npx tailwindcss -i ./themes/hugo-theme-windy/assets/scss/tailwind.scss -o ./themes/hugo-theme-windy/assets/scss/main.css --jit -w",
+    "build": "cross-env NODE_ENV=production npx tailwindcss -i ./themes/hugo-theme-windy/assets/scss/tailwind.scss -o ./themes/hugo-theme-windy/assets/scss/main.css --jit --minify"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +13,12 @@
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "cross-env": "^7.0.3",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.6",
+    "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.4"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.1"
+    "@tailwindcss/typography": "^0.4.1",
+    "postcss-scss": "^4.0.0"
   }
 }
