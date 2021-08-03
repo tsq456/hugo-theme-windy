@@ -1510,34 +1510,67 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-@layer components {
-  .bg-width {
-    margin-left: auto;
-    margin-right: auto;
+#waline {
+  .vcards {
+    padding: 10px;
+    .vcard svg:hover {
+      fill: $accent-color;
+    }
   }
-
-  .bg-width {
-    width: 100%;
+  .v[data-class=v] .vbtn:hover {
+    border-color: $accent-color;
+    color: $accent-color;
   }
-
-  .bg-width {
-    --tw-bg-opacity: 1;
-    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  .v[data-class=v] .vbtn.primary {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    &:hover {
+      background-color: lighten($color: $accent-color, $amount: 10%);
+      border-color: lighten($color: $accent-color, $amount: 10%);
+      transition: .2s all ease-in;
+      color: white;
+    }
   }
-
-  .dark .bg-width {
-    --tw-bg-opacity: 1;
-    background-color: rgba(39, 39, 39, var(--tw-bg-opacity));
+  .veditor {
+    font-family: $default-font;
+    &:focus {
+      background-color: transparent !important;
+    }
   }
+  .vitem input:focus {
+    background-color: transparent !important;
+  }
+  .vpower {
+    margin: 0 10px !important;
+    a {
+      color: $accent-color;
+    }
+  }
+  .vcomment {
+    border-top: 1px solid $divider-color;
+    border-bottom: 1px solid $divider-color;
+    padding: 10px;
+    .vpanel {
+      border-radius: unset;
+      border: 0px;
+    }
+  }
+  .v[data-class=v] .vheader {
+    border-bottom: 1px solid $divider-color
+  }
+  .vaction svg:hover {
+    fill: $accent-color;
+  }
+  @media screen and (max-width: 580px) {
+    .v[data-class=v] .vheader .vheader-item {
+      border-bottom: 1px solid $divider-color
+    }
 
-  @media (min-width: 1024px) {
-    .bg-width {
-      width: 920px;
+    .v[data-class=v] .vheader {
+      border-bottom: unset
     }
   }
 }
-
-@import "./vendorHacker.scss";
 
 .last\:mb-0:last-child {
   margin-bottom: 0px;
