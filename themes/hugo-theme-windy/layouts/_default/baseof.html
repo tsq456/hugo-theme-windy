@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode | default "en" }}" class="dark">
+<html lang="{{ $.Site.LanguageCode | default "en" }}" class="<?php echo($_COOKIE['dark'] == '1' ? 'dark' : ''); ?>">
     <head>
         <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>    
         {{ partial "head.html" . }}
     </head>
-    <body class="bg-gray-50 antialiased dark:bg-darkBgDarker">
+    <body class="bg-gray-50 antialiased dark:bg-darkBgDarker transition-all">
         {{- block "main" . }}{{- end }}
         {{- partial "footer.html" . -}}
+        {{- partial "darkSwitcher.html" . -}}
     </body>
 </html>

@@ -4,11 +4,11 @@ myID = document.getElementById("toc");
 var myScrollFunc = function() {
   var y = window.scrollY;
   if (y >= 400) {
-    myID.classList.add("show")
-    myID.classList.remove("hidden")
+    myID.classList.add("toc-show")
+    myID.classList.remove("toc-hidden")
   } else {
-    myID.classList.add("hidden")
-    myID.classList.remove("show")
+    myID.classList.add("toc-hidden")
+    myID.classList.remove("toc-show")
   }
 };
 window.addEventListener("scroll", myScrollFunc);

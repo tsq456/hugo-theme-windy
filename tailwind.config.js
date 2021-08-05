@@ -32,8 +32,14 @@ module.exports = {
         typography: {
           'dark': {
             css: {
-              'h2, h3, p, strong, li, code, code>span, li:before': {
+              'h2, h3': {
+                color: 'white',
+              },
+              'p, strong, li, code, code>span, li:before': {
                 color: '#e0e0e0',
+              },
+              hr: {
+                borderTop: '1px solid #5c5c5c',
               },
               a: {
                 boxShadow: 'inset 0 1em 0 0 #1f2937, inset 0 -0.375em 0 0 rgb(252 64 65)',
