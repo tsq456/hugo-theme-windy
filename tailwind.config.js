@@ -46,7 +46,16 @@ module.exports = {
                 '&:hover': {
                   boxShadow: 'inset 0 .8em 0 0 #1f2937, inset 0 -0.375em 0 0 rgb(252 64 65)',
                   color: '#e2e2e2',
-                }
+                },
+              },
+              pre: {
+                backgroundColor: '#121212 !important',
+              },
+              'p code': {
+                backgroundColor: '#121212',
+                padding: '4px',
+                borderRadius: '4px',
+                margin: '0 4px',
               },
             }
           },
@@ -74,6 +83,15 @@ module.exports = {
                   color: '#333',
                   boxShadow: 'none',
                 }
+              },
+              'pre>code': {
+                color: '#333',
+              },
+              'p code': {
+                backgroundColor: '#e5e7eb',
+                padding: '4px',
+                borderRadius: '4px',
+                margin: '0 4px',
               },
               figure: {
                 marginTop: '3rem',

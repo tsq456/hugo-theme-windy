@@ -1,108 +1,25 @@
 @tailwind base;
 
-html.dark #waline .vpanel {
-    @apply rounded-none m-0 bg-darkBglighter border-r-0 border-l-0 border-darkDivider
-}
-html.dark #waline .vpanel .vheader {
-    @apply border-b border-solid border-darkDivider rounded-none
-}
-html #waline .vpanel .vheader .vheader-item {
-    @apply border-0
-}
-html.dark #waline .vpanel .vheader .vheader-item label {
-    @apply text-darkPrimary
-}
-html.dark #waline .vpanel .vheader .vheader-item input {
-    @apply bg-darkBglighter text-darkPrimary
-}
-html.dark #waline .veditor {
-    @apply bg-darkBglighter text-darkPrimary max-w-[calc(100%-40px)] mx-[20px] rounded-none
-}
-html.dark #waline .veditor:-ms-input-placeholder, html.dark #waline .veditor::-webkit-input-placeholder {
-    @apply text-darkPrimary
-}
-html.dark #waline .vfooter svg {
-    @apply text-darkPrimary fill-current
-}
-html.dark #waline .vfooter svg:hover {
-    @apply text-accent fill-current ease-in-out duration-200 transition-all
-}
-html.dark #waline .vbtn {
-    @apply border-darkDivider text-darkSecondry
-}
-html.dark #waline .vbtn:hover {
-    @apply text-accent
-}
-html.dark #waline .vbtn.primary {
-    @apply bg-accent border-accent text-white
-}
-html.dark #waline .vbtn.primary:hover {
-    @apply ring-2 ring-white
-}
-html.dark #waline .vcount {
-    @apply text-darkPrimary ml-[10px]
-}
-html.dark #waline .vempty {
+#footer {
     @apply text-darkSecondry
 }
-html.dark #waline .vpower {
-    @apply mr-[10px] pb-3
-}
-html.dark #waline .vpower a {
-    @apply text-accent
-}
-html.dark #waline .vcard {
-    @apply border-darkDivider
-}
-html.dark #waline .vcard .vhead a {
-    @apply text-darkPrimary
-}
-html.dark #waline .vmeta span {
-    @apply bg-darkBgDarker text-darkPrimary
-}
-html.dark #waline .vcard .vcontent p {
-    @apply text-darkPrimary
-}
-html.dark #waline .vreply svg {
-    @apply text-darkPrimary fill-current
-}
-html.dark #waline .vreply svg:hover {
-    @apply text-accent fill-current ease-in-out duration-200 transition-all
-}
-html.dark #waline .vloading svg {
-    @apply text-white fill-current
+#footer svg path {
+    @apply dark:text-darkSecondry fill-current
 }
 
-html.dark #footer {
-    @apply text-darkSecondry
+#toc li {
+    @apply leading-8 pl-4 text-gray-500 border-l-2 border-gray-200 dark:text-darkSecondry dark:border-darkDivider truncate
 }
-html.dark #footer svg path {
-    @apply text-darkSecondry fill-current
+#toc li:hover {
+    @apply text-gray-700 dark:text-white
 }
-
-html.dark #toc li {
-    @apply text-darkSecondry border-darkDivider truncate
+#toc li.is-active-li {
+    @apply border-l-2 border-accent text-gray-700 dark:text-white
 }
-html.dark #toc li:hover {
-    @apply text-white
-}
-html.dark #toc li.is-active-li {
-    @apply border-l-2 border-accent text-white
-}
-
-html #toc li {
-    @apply leading-8 pl-4 text-gray-500 border-l-2 border-gray-200
-}
-html #toc li:hover {
-    @apply text-gray-700
-}
-html #toc li.is-active-li {
-    @apply border-l-2 border-accent text-gray-700
-}
-html #toc.toc-show {
+#toc.toc-show {
     @apply opacity-100
 }
-html #toc.toc-hidden {
+#toc.toc-hidden {
     @apply opacity-0
 }
 @media screen and (max-width: 1300px) {
@@ -111,68 +28,77 @@ html #toc.toc-hidden {
     }
 }
 
-html #waline .vpanel {
-    @apply rounded-none m-0 border-r-0 border-l-0 border-gray-200
+#waline .vpanel {
+    @apply rounded-none m-0 border-r-0 border-l-0 border-gray-200 dark:bg-darkBglighter dark:border-darkDivider
 }
-html #waline .vpanel .vheader {
-    @apply border-b border-solid border-gray-200 rounded-none
+#waline .vpanel .vheader {
+    @apply border-b border-solid border-gray-200 dark:border-darkDivider rounded-none
 }
-html #waline .vpanel .vheader .vheader-item {
+#waline .vpanel .vheader .vheader-item {
     @apply border-0
 }
-html #waline .vpanel .vheader .vheader-item label {
-    @apply text-gray-700
+#waline .vpanel .vheader .vheader-item label {
+    @apply text-gray-700 dark:text-darkPrimary
 }
-html #waline .vpanel .vheader .vheader-item input {
-    @apply text-gray-700 bg-white
+#waline .vpanel .vheader .vheader-item input {
+    @apply text-gray-700 bg-white dark:bg-darkBglighter dark:text-darkPrimary
 }
-html #waline .veditor {
-    @apply text-gray-700 max-w-[calc(100%-40px)] mx-[20px] rounded-none bg-white
+#waline .veditor {
+    @apply text-gray-700 dark:text-darkPrimary dark:bg-darkBglighter max-w-[calc(100%-40px)] mx-[20px] rounded-none bg-white
 }
-html #waline .veditor:-ms-input-placeholder, html.dark #waline .veditor::-webkit-input-placeholder {
+#waline .veditor:-ms-input-placeholder, html.dark #waline .veditor::-webkit-input-placeholder {
     @apply text-darkPrimary
 }
-html #waline .vfooter svg {
-    @apply text-gray-700 fill-current
+#waline .vfooter svg {
+    @apply text-gray-700 dark:text-darkPrimary fill-current
 }
-html #waline .vfooter svg:hover {
+#waline .vfooter svg:hover {
     @apply text-accent fill-current ease-in-out duration-200 transition-all
 }
-html #waline .vbtn {
-    @apply border-gray-700
+#waline .vbtn {
+    @apply border-gray-700 dark:border-darkDivider dark:text-darkSecondry
 }
-html #waline .vbtn:hover {
+#waline .vbtn:hover {
     @apply border-accent text-accent
 }
-html #waline .vbtn.primary {
-    @apply bg-accent border-accent
+#waline .vbtn.primary {
+    @apply bg-accent border-accent dark:text-white
 }
-html #waline .vbtn.primary:hover {
-    @apply ring-2 ring-[#FFA2A3] text-white
+#waline .vbtn.primary:hover {
+    @apply ring-2 ring-[#FFA2A3] text-white dark:ring-white
 }
-html #waline .vcount {
-    @apply text-gray-700 ml-[10px]
+#waline .vcount {
+    @apply text-gray-700 ml-[10px] dark:text-darkPrimary
 }
-html #waline .vempty {
-    @apply text-gray-500
+#waline .vempty {
+    @apply text-gray-500 dark:text-darkSecondry
 }
-html #waline .vpower {
+#waline .vpower {
     @apply mr-[10px] pb-3
 }
-html #waline .vpower a {
+#waline .vpower a {
     @apply text-accent
 }
-html #waline .vcard .vhead a {
-    @apply text-gray-700
+#waline .vcard .vhead a {
+    @apply text-gray-700 dark:text-darkPrimary
 }
-html #waline .vcard .vcontent p {
-    @apply text-gray-700
+#waline .vcard .vcontent p {
+    @apply text-gray-700 dark:text-darkPrimary
 }
-html #waline .vreply svg {
-    @apply text-gray-700 fill-current
+#waline .vreply svg {
+    @apply text-gray-700 fill-current dark:text-darkPrimary
 }
-html #waline .vreply svg:hover {
+#waline .vreply svg:hover {
     @apply text-accent fill-current ease-in-out duration-200 transition-all
+}
+html.dark #waline .vloading svg {
+    @apply dark:text-white fill-current
+}
+#waline .vcard {
+    @apply dark:border-darkDivider
+}
+#waline .vmeta span {
+    @apply dark:bg-darkBgDarker dark:text-darkPrimary
 }
 
 @tailwind components;
@@ -186,4 +112,8 @@ html #waline .vreply svg:hover {
 
 #toggle:checked ~ label div.toggle-dot {
     @apply translate-x-7 ease-in-out duration-200;
+}
+
+.prose code {
+    @apply before:content-none after:content-none font-normal italic
 }
