@@ -1,4 +1,4 @@
-baseURL = "//hugo-theme-windy.vercel.app/"
+# baseURL = "//hugo-theme-windy.vercel.app/"
 languageCode = "zh-cn"
 title = "阿凸日记"
 theme = "hugo-theme-windy"
