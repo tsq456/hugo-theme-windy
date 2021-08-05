@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>折腾 on 阿凸日记</title>
+    <link>tutang.com/tags/%E6%8A%98%E8%85%BE/</link>
+    <description>Recent content in 折腾 on 阿凸日记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 30 Mar 2021 21:44:20 +0800</lastBuildDate><atom:link href="tutang.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Google Spreadsheet统计PV和UV</title>
+      <link>tutang.com/2021/03/how-to-count-total-visitors-number/</link>
+      <pubDate>Tue, 30 Mar 2021 21:44:20 +0800</pubDate>
+      
+      <guid>tutang.com/2021/03/how-to-count-total-visitors-number/</guid>
+      <description>&lt;p&gt;21年4月2日：我是沙雕，原来有现成的服务可以使用，&lt;a href=&#34;https://busuanzi.ibruce.info/&#34;&gt;不蒜子&lt;/a&gt;就提供很好的网站计数服务&amp;hellip;而且谷歌表格由于统计周期的问题，只适合用来统计PV统计。&lt;/p&gt;
+&lt;p&gt;本文基于hugo已接入Google Analytics（下文统称GA）以及能够访问Google Spreadsheet为前提。大部分HUGO主题都已经默认集成了GA，至于怎么访问谷歌表格，你懂得。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>创建ManicTime的服务器</title>
+      <link>tutang.com/2021/03/starting-manictime-server-on-docker/</link>
+      <pubDate>Sat, 27 Mar 2021 09:05:30 +0800</pubDate>
+      
+      <guid>tutang.com/2021/03/starting-manictime-server-on-docker/</guid>
+      <description>&lt;p&gt;关于ManicTime（后文称MT）是什么，在之前的一篇博客里有详细介绍过，自己用了一段时间下来，拖延症的症状得到了明显的改善，每天的时间安排也变得更加有序了，就想着看看手机端是什么亚子的，结果打开手机直接显示要登陆MT，这哪行，一定要看到APP端的界面才行。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

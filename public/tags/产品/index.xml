@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>产品 on 阿凸日记</title>
+    <link>tutang.com/tags/%E4%BA%A7%E5%93%81/</link>
+    <description>Recent content in 产品 on 阿凸日记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Jul 2021 17:48:35 +0800</lastBuildDate><atom:link href="tutang.com/tags/%E4%BA%A7%E5%93%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【译】并非所有指标都是好指标</title>
+      <link>tutang.com/2021/07/not-all-metrics-are-good-metrics/</link>
+      <pubDate>Sun, 04 Jul 2021 17:48:35 +0800</pubDate>
+      
+      <guid>tutang.com/2021/07/not-all-metrics-are-good-metrics/</guid>
+      <description>&lt;p&gt;随手从Medium上捡到的一篇关于数据与产品关系的简短的文章，其中阐述的道理很简单，无非就是不要让无用或者错误的数据误导了产品设计，也就是文章最后点题的一句话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;if you’re going to use data, make sure you’re using it in a way that’s adding insight to each decision, not subtracting from it.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

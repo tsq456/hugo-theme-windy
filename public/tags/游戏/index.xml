@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>游戏 on 阿凸日记</title>
+    <link>tutang.com/tags/%E6%B8%B8%E6%88%8F/</link>
+    <description>Recent content in 游戏 on 阿凸日记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 22 Mar 2021 20:29:23 +0800</lastBuildDate><atom:link href="tutang.com/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于游戏新手设计</title>
+      <link>tutang.com/2021/03/game-newbieguid-design/</link>
+      <pubDate>Mon, 22 Mar 2021 20:29:23 +0800</pubDate>
+      
+      <guid>tutang.com/2021/03/game-newbieguid-design/</guid>
+      <description>&lt;p&gt;新手阶段某种程度上就是游戏的脸面（当然更严谨的说游戏的美术才是游戏的脸面），特别在游戏品质已经越来越高的当下，新手引导对于玩家和产品都起到极其重要的作用：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;在产品侧&lt;/strong&gt;，游戏需要通过新手引导达成留存目的，后续更好实现其商业目标&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在玩家侧&lt;/strong&gt;，玩家需要通过新手引导熟悉游戏玩法，才能更深入的体验游戏乐趣&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上仅针对氪金游戏，在泛游戏概念上，优秀的新手引导在游戏初期不仅可以帮助玩家更好的掌握核心玩法，还能激发玩家的代入感和同理心，提高玩家继续游戏下去的欲望与动力。&lt;/p&gt;
+&lt;p&gt;所以一个优秀的游戏引导是让游戏设计者和玩家获得双赢的基础，其本质&lt;strong&gt;在于高效并有趣的让玩家掌握游戏核心玩法&lt;/strong&gt;。但是当前市面上很多游戏采用的是比较直白、限制性强和叙事表达弱的引导形式，虽说这与中国游戏发展历程短、大环境躁动、玩家群体游戏经验有很大关系，但是肯定肯定不能因此就举步不前，因此这篇文章其实是搜集了目前网上能找到的新手引导相关文章，碎片化重组再加入一些个人观点后的记录，期望能够达成以下三个目的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对新手引导有较全面认识并能够甄别一款游戏新手引导的好坏的&lt;/li&gt;
+&lt;li&gt;可以较为深入的分析一款游戏的新手体验&lt;/li&gt;
+&lt;li&gt;后续有实际设计需求的时候能够有足够的知识储备进行应对，知道从何切入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希望大家在阅读后有所启发。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>游戏商业化界面设计</title>
+      <link>tutang.com/2021/03/business-page-design/</link>
+      <pubDate>Mon, 22 Mar 2021 20:29:23 +0800</pubDate>
+      
+      <guid>tutang.com/2021/03/business-page-design/</guid>
+      <description>&lt;h2 id=&#34;目的&#34;&gt;目的&lt;/h2&gt;
+&lt;p&gt;由于数值投放及定价策略均不在本职能的可控范围内，所以我们的目的是通过改变&lt;strong&gt;框架层及界面层&lt;/strong&gt;来影响玩家判断，尽可能将商业化界面的诉求 —— 拉收 提升到新的高度。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://30924398.xyz:6001/images/2020/12/30/D1ip0DrRzJroDTn4f9dbd248de26f2ab.png#center&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;商业化界面的本质&#34;&gt;商业化界面的本质&lt;/h2&gt;
+&lt;p&gt;商业化界面的本质就是玩家（消费者）选购商品的过程，而消费者购买决策的过程基本分为以下五步：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;认识需要 - 材料不够了 or 我能力弱我想变强 or 我想变得更强 &amp;hellip;&lt;/li&gt;
+&lt;li&gt;信息搜集 - 浏览商业化界面内容信息&lt;/li&gt;
+&lt;li&gt;评估选择 - 就是玩家在思考决策的过程，评估商品选项的性价比（土豪玩家除外）&lt;/li&gt;
+&lt;li&gt;购买决定 - 在游戏中就是点击“购买”按钮这一行为&lt;/li&gt;
+&lt;li&gt;购后评估 - 映射到游戏中就是点击“购买”按钮后的反馈&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

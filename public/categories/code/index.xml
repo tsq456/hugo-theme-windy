@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on 阿凸日记</title>
+    <link>tutang.com/categories/code/</link>
+    <description>Recent content in Code on 阿凸日记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 07 May 2021 20:42:14 +0800</lastBuildDate><atom:link href="tutang.com/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用GITHUB ACTION进行HUGO的自动化部署</title>
+      <link>tutang.com/2021/05/hugo-automatic-deploy/</link>
+      <pubDate>Fri, 07 May 2021 20:42:14 +0800</pubDate>
+      
+      <guid>tutang.com/2021/05/hugo-automatic-deploy/</guid>
+      <description>&lt;p&gt;到今天为止，自己于一个月前建立的这个站点的网站样式以及阅读体验、基础的使用体验和内容管理发布方式终于初步成型了，在此之前每次在hugo里生成内容后，是通过SFTP上传到腾讯的云服务器的，在频繁更新网站代码的背景下难免有些麻烦。同时也因为之前网站是部署在Vercel上的，更新内容后只要PUSH到GITHUB就可以自动化部署后体现在前台（现在回想起来，Vercel应该也是用了GITHUB ACTION），导致对于手动更新站点内容的方式比较抵触。&lt;/p&gt;
+&lt;p&gt;其实从搭建现在这个主题的初始，也在一直寻找合适的自动化部署方式，也因此“误入”了Caddy的坑，结果发现Caddy 2在目前还不支持CaddyFile这种傻瓜方式进行基于WEBHOOK的自动化部署（不过有一说一，CaddyFile对于没什么代码基础的人而言，比NGINX这种怪物友好太多了），遂放弃。再到前两天想起来之前有看到过GITHUB ACTION貌似可以做到自动化部署，因此进行了一番搜索，下文也是对这一过程的记录，以免回头更换云服务器的时候还得重投再找一遍解决方案，主要内容来源于&lt;a href=&#34;http://www.9ong.com/042021/github-actions%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E6%9E%84%E5%BB%BA%E9%83%A8%E7%BD%B2hugo.html&#34;&gt;这篇博文&lt;/a&gt;，对于GITHUB的理解基于&lt;a href=&#34;https://www.youtube.com/watch?v=gW1TDirJ5E4&amp;amp;t=321s&#34;&gt;油管的这个阿婆主&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用Google Spreadsheet统计PV和UV</title>
+      <link>tutang.com/2021/03/how-to-count-total-visitors-number/</link>
+      <pubDate>Tue, 30 Mar 2021 21:44:20 +0800</pubDate>
+      
+      <guid>tutang.com/2021/03/how-to-count-total-visitors-number/</guid>
+      <description>&lt;p&gt;21年4月2日：我是沙雕，原来有现成的服务可以使用，&lt;a href=&#34;https://busuanzi.ibruce.info/&#34;&gt;不蒜子&lt;/a&gt;就提供很好的网站计数服务&amp;hellip;而且谷歌表格由于统计周期的问题，只适合用来统计PV统计。&lt;/p&gt;
+&lt;p&gt;本文基于hugo已接入Google Analytics（下文统称GA）以及能够访问Google Spreadsheet为前提。大部分HUGO主题都已经默认集成了GA，至于怎么访问谷歌表格，你懂得。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>创建ManicTime的服务器</title>
+      <link>tutang.com/2021/03/starting-manictime-server-on-docker/</link>
+      <pubDate>Sat, 27 Mar 2021 09:05:30 +0800</pubDate>
+      
+      <guid>tutang.com/2021/03/starting-manictime-server-on-docker/</guid>
+      <description>&lt;p&gt;关于ManicTime（后文称MT）是什么，在之前的一篇博客里有详细介绍过，自己用了一段时间下来，拖延症的症状得到了明显的改善，每天的时间安排也变得更加有序了，就想着看看手机端是什么亚子的，结果打开手机直接显示要登陆MT，这哪行，一定要看到APP端的界面才行。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>创建游戏卡片Shortcode</title>
+      <link>tutang.com/2021/03/how-to-build-a-game-shortcode/</link>
+      <pubDate>Tue, 23 Mar 2021 10:21:30 +0800</pubDate>
+      
+      <guid>tutang.com/2021/03/how-to-build-a-game-shortcode/</guid>
+      <description>&lt;p&gt;最近这前段业余时间主要就在做两件事，疯狂肝《戴森球计划》和建博客改主题，我想他们的共通之处就在于都能够通过自己一点一滴的努力构建出想要看到的结果，前者是通过传送带这样的微观元素逐步构建出戴森球这样宇宙尺度的巨构奇观，后者是一点点的代码构建出可视化的博客啦。本身就是相对重度的PC游戏玩家，刚好也有用到&lt;a href=&#34;https://mufeng.me/post/have-seen-the-film&#34;&gt;豆瓣看过的电影&lt;/a&gt;，就想着是不是能够通过hugo的短代码实现类似的卡片功能，当然人家是通过自带读取豆瓣API来实现的，我这不能比~话不多说，开搞。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

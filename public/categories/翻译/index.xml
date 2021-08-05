@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>翻译 on 阿凸日记</title>
+    <link>tutang.com/categories/%E7%BF%BB%E8%AF%91/</link>
+    <description>Recent content in 翻译 on 阿凸日记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Jul 2021 17:48:35 +0800</lastBuildDate><atom:link href="tutang.com/categories/%E7%BF%BB%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【译】并非所有指标都是好指标</title>
+      <link>tutang.com/2021/07/not-all-metrics-are-good-metrics/</link>
+      <pubDate>Sun, 04 Jul 2021 17:48:35 +0800</pubDate>
+      
+      <guid>tutang.com/2021/07/not-all-metrics-are-good-metrics/</guid>
+      <description>&lt;p&gt;随手从Medium上捡到的一篇关于数据与产品关系的简短的文章，其中阐述的道理很简单，无非就是不要让无用或者错误的数据误导了产品设计，也就是文章最后点题的一句话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;if you’re going to use data, make sure you’re using it in a way that’s adding insight to each decision, not subtracting from it.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>【译】你的设计箴言是什么</title>
+      <link>tutang.com/2021/05/what-are-your-design-maxims/</link>
+      <pubDate>Tue, 18 May 2021 19:37:39 +0800</pubDate>
+      
+      <guid>tutang.com/2021/05/what-are-your-design-maxims/</guid>
+      <description>&lt;p&gt;正儿八经翻译的第二篇文章，文章没“选对”，作者洋洋洒洒写了老长一篇，导致从选定文章到翻译校对完花了两周多的时间。并且不知道是自己英文太烂还是英文写作本就如此，在文章中经常会出现与上下文情景看去没有太大关联的句子，再加上作者的断句确实有点离谱，导致整个过程异常痛苦，好在是最后坚持下来了。&lt;/p&gt;
+&lt;p&gt;坚持下来的其中很大一个原因在于确实很多点自己确实很有感触。作者主要从版式、审美、管理、表达、协作、设计背景、学习、试错、努力以及本心这么多个方面阐述了自己的看法。虽然作者应该是平面设计领域的设计师，但是设计本质上是共通的，所以很多点也是自己“这么多年”来深有感触的，有的在不断践行，有的一直也做不好。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【译】Notion重设计</title>
+      <link>tutang.com/2021/04/notion-redesign/</link>
+      <pubDate>Sat, 24 Apr 2021 09:14:45 +0800</pubDate>
+      
+      <guid>tutang.com/2021/04/notion-redesign/</guid>
+      <description>&lt;p&gt;这是正儿八经的第一篇翻译文章，后面如果能坚持下去可能也会变成一个系列。可是为什么要翻译？最直接的原因是因为想更新文章，但是一时半会儿没内容怎么办？那就找文章翻译呗，既能学习外国同行的经验，也能锻炼英文水平，还能丰富博客文章，一举三得，何乐不为。&lt;/p&gt;
+&lt;p&gt;在“云”技术越来越完善的当下，各类XaaS（什么PaaS、SaaS、IaaS、DaaS）的产品越来越多，作为设计师相对更容易接触到的应该就是Saas或者Paas类型的产品了，我自己也是Notion用户，所以当时在闲逛Medium的时候看到作者小姐姐写的这篇关于Notion重设计的文章时，认为好多优化方案还是非常棒的。感触比较深的是虽然这只是作者的业余研究案例，但是从设计流程到最终原型的完整度都已经非常完善了，设计流程基本就是设计思维那一套从调研到假设到定义再到原型的方法，原型也基本都是高保真且用GIF进行了呈现。业余案例尚且如此，工作中应该会只会比这更详尽吧。&lt;/p&gt;
+&lt;p&gt;同时，在前两年做游戏的工作经验中，自己也对于“假设”对于设计的意义有了更深一步的理解，很多时候由于客观原因的限制，设计师没办法获取到一手的用户资料或者事无巨细都事先获得答案，这时候要让自己的设计是有方向的，就必须要先进行假设以主导后续设计，文章中作者对于许多Notion的现存问题的解决方案也是以假设（&lt;em&gt;Hypothesis&lt;/em&gt;）为前置再定义出来的，当然可能因为是业余项目的缘故，作者没有进行后续的设计验证。&lt;/p&gt;
+&lt;p&gt;废话不多说，以下都是正文，不保证翻译的全对，甚至可能错误的地方更多，严复所说的信达雅可太难了。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
