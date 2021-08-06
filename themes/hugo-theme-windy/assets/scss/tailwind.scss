@@ -102,13 +102,17 @@ html.dark #waline .vloading svg {
 }
 
 @tailwind components;
-@tailwind utilities;
 
 @layer components {
     .bg-width {
         @apply w-full lg:w-[920px] mx-auto bg-white dark:bg-darkBglighter;
     }
+    .global-underline {
+        @apply bg-gradient-to-r from-accent to-accent bg-left-bottom bg-no-repeat transition-size duration-1000 bg-underlineNormal hover:bg-underlineHover
+    }
 }
+
+@tailwind utilities;
 
 #toggle:checked ~ label div.toggle-dot {
     @apply translate-x-7 ease-in-out duration-200;
@@ -116,4 +120,70 @@ html.dark #waline .vloading svg {
 
 .prose code {
     @apply before:content-none after:content-none font-normal italic
+}
+
+.prose p {
+    @apply font-primaryFont leading-9
+}
+
+.prose blockquote p {
+    @apply font-secondryFont
+}
+
+@layer base {    
+    @font-face {
+        font-family: 'Fira Code';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: local(''), url('../fonts/fira-code-v10-latin-regular.woff2') format('woff2'), url('../fonts/fira-code-v10-latin-regular.woff') format('woff')
+    }
+    
+    @font-face {
+        font-family: 'Cousine';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: local(''), url('../fonts/cousine-v17-latin-regular.woff2') format('woff2'), url('../fonts/cousine-v17-latin-regular.woff') format('woff')
+    }
+    
+    @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: local(''), url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'), url('../fonts/montserrat-v15-latin-regular.woff') format('woff')
+    }
+    
+    @font-face {
+        font-family: 'Noto Sans SC';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: local(''), url('../fonts/noto-sans-sc-v12-latin_chinese-simplified-regular.woff2') format('woff2'), url('../fonts/noto-sans-sc-v12-latin_chinese-simplified-regular.woff') format('woff')
+    }
+    
+    @font-face {
+        font-family: 'Noto Sans SC';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 700;
+        src: local(''), url('../fonts/noto-sans-sc-v12-latin_chinese-simplified-700.woff2') format('woff2'), url('../fonts/noto-sans-sc-v12-latin_chinese-simplified-700.woff') format('woff')
+    }
+    
+    @font-face {
+        font-family: 'Noto Serif SC';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: local(''), url('../fonts/noto-serif-sc-v8-latin_chinese-simplified-regular.woff2') format('woff2'), url('../fonts/noto-serif-sc-v8-latin_chinese-simplified-regular.woff') format('woff')
+    }
+    
+    @font-face {
+        font-family: 'Noto Serif SC';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 700;
+        src: local(''), url('../fonts/noto-serif-sc-v8-latin_chinese-simplified-700.woff2') format('woff2'), url('../fonts/noto-serif-sc-v8-latin_chinese-simplified-700.woff') format('woff')
+    }
 }

@@ -4,17 +4,19 @@
 <div class="bg-width shadow-bg overflow-hidden">
     {{- partial "navigation.html" . -}}
     {{ range $paginator.Pages }}
-        <article class="w-4/5 mx-auto mt-14">
-            <h1 class="md:text-3xl text-2xl hover:text-gray-500 dark:text-white dark:hover:text-gray-200 text-center font-bold pb-1">
-                <a class="" href="{{ .Permalink }}">{{ .Title }}</a>
-            </h1>
-            <p class="text-center mt-2 mb-6 text-gray-500 dark:text-darkSecondry  text-md">{{ .Params.date | dateFormat "2 Jan 2006" | upper}}</p>
+        <article class="w-4/5 mx-auto mt-10">
+            <div class="group">
+                <h1 class=" mb-4 md:text-3xl text-2xl dark:text-white text-center font-bold pb-1">
+                    <a class="global-underline group-hover:bg-underlineHover" href="{{ .Permalink }}">{{ .Title }}</a>
+                </h1>
+                <p class="text-center mt-2 mb-6 text-gray-500 dark:text-darkSecondry  text-md">{{ .Params.date | dateFormat "2 Jan 2006" | upper}}</p>
 
-            {{ if .Params.cover_image }}
-                <a href='{{ .RelPermalink }}'>
-                    <img src="{{ .Params.cover_image }}" class="w-[90%] mb-8 mx-auto rounded-md shadow-sm hover:shadow-xl ease-out duration-300" />
-                </a>
-            {{ end }}
+                {{ if .Params.cover_image }}
+                    <a href='{{ .RelPermalink }}'>
+                        <img src="{{ .Params.cover_image }}" class="w-[90%] mb-8 mx-auto rounded-md shadow-sm hover:shadow-xl ease-out duration-300" />
+                    </a>
+                {{ end }}
+            </div>
             <div class="prose dark:prose-dark max-w-none mx-auto">{{ .Summary }}</div>
 
             <div class="mt-12 flex flex-row justify-between text-sm">
@@ -22,7 +24,12 @@
                     {{ with .Params.categories }}
                         <span class="text-gray-500 dark:text-gray-400">分类：</span>
                         {{ range . }}
+                        <div class="inline-flex mr-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500 dark:text-gray-300 dark:fill-current" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+                            </svg>
                             <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="hover:text-gray-500 dark:hover:text-gray-100  mr-5 dark:text-gray-300" >{{ . }}</a>
+                        </div>                            
                         {{ end }}
                     {{ end }}
 

@@ -30,31 +30,23 @@
 
         {{ with .Params.categories }}
             {{ range . }}
-                <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" >x&nbsp;{{- . -}}&nbsp;x</a>
+                <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="py-1 px-4 rounded-full border-solid border-white border hover:border-none hover:bg-accent hover:px-6 duration-300 ease-in">{{- . -}}</a>
             {{ end }}
         {{ end }}
 
         <h1 class="md:text-4xl text-3xl font-bold mb-6 mt-8">{{ .Title }}</h1>
-        <div class="post-meta">
+        <div class="flex flex-row space-x-2 justify-center">
+            <span>{{ .Date.Format "2006-01-02" }}</span>
+            <span class="text-gray-400">/</span>
             <span>
-                {{ .Date.Format "2006-01-02" }}
-              </span>
-              <span class="split">
-                ·
-              </span>
-              <span>
-                {{ if lt 1 .WordCount }}
-                  约{{ .WordCount }}字
-                {{ else }}
-                    {{ .WordCount }} word
-                {{ end }}
-              </span>
-              <span class="split">
-                ·
-              </span>
-              <span>
-                需时{{ .ReadingTime }}分钟
-              </span>
+              {{ if lt 1 .WordCount }}
+                约{{ .WordCount }}字
+              {{ else }}
+                  {{ .WordCount }} word
+              {{ end }}
+            </span>
+            <span class="text-gray-400">/</span>
+            <span>需时{{ .ReadingTime }}分钟</span>
         </div>
     </div>
   </div>

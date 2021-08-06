@@ -4,6 +4,15 @@ module.exports = {
     purge: ["./content/**/*.md", "./content/**/*.html", "./themes/hugo-theme-windy/layouts/**/*.html"],
 
     theme: {
+      backgroundSize: {
+        'underlineNormal': '0 6px',
+        'underlineHover': '100% 6px',
+      },
+      fontFamily: {
+        'primaryFont': '"Noto Sans SC", "Microsoft YaHei", SimHei',
+        'secondryFont': '"Noto Serif SC", FangSong',
+        'monoFont': '"Fira Code", Montserrat, Cousine;',
+      },
       scale: {
         '200': '2',
         '300': '3',
@@ -20,6 +29,9 @@ module.exports = {
         'bg': '0 0 10px rgb(0 0 0 / 10%)',
       },
       extend: {
+        transitionProperty: {
+          'size': 'background-size',
+        },
         colors: {
           'accent': '#fc4041',
           'blackGradient': 'rgb(0,0,0,.7)',
