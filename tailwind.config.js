@@ -7,6 +7,8 @@ module.exports = {
       backgroundSize: {
         'underlineNormal': '0 6px',
         'underlineHover': '100% 6px',
+        'linkNormal': '100% 2px',
+        'linkHover': '100% 4px',
       },
       fontFamily: {
         'primaryFont': '"Noto Sans SC", "Microsoft YaHei", SimHei',
@@ -53,13 +55,14 @@ module.exports = {
               hr: {
                 borderTop: '1px solid #5c5c5c',
               },
-              a: {
-                boxShadow: 'inset 0 1em 0 0 #1f2937, inset 0 -0.375em 0 0 rgb(252 64 65)',
-                '&:hover': {
-                  boxShadow: 'inset 0 .8em 0 0 #1f2937, inset 0 -0.375em 0 0 rgb(252 64 65)',
-                  color: '#e2e2e2',
-                },
-              },
+              // a: {
+              //   boxShadow: 'inset 0 1em 0 0 #1f2937, inset 0 -0.375em 0 0 rgb(252 64 65)',
+              //   '&:hover': {
+              //     boxShadow: 'inset 0 .8em 0 0 #1f2937, inset 0 -0.375em 0 0 rgb(252 64 65)',
+              //     transition: 'all .2s ease-out',
+              //     color: '#e2e2e2',
+              //   },
+              // },
               pre: {
                 backgroundColor: '#121212 !important',
               },
@@ -73,18 +76,18 @@ module.exports = {
           },
           DEFAULT: {
             css: {
-              a: {
-                '&:hover': {
-                  boxShadow: 'inset 0 .8em 0 0 #fff, inset 0 -0.375em 0 0 rgb(252 64 65 / 40%)',
-                  transition: 'all .2s ease-out',
-                  color: '#fc4041',
-                },
-                boxShadow: 'inset 0 1em 0 0 #fff, inset 0 -0.375em 0 0 rgb(252 64 65 / 40%)',
-                transition: 'all .2s ease-out',
-                textDecoration: 'none',
-                color: '#33333',
-                margin: '0 .2rem',
-              },
+              // a: {
+              //   boxShadow: 'inset 0 1em 0 0 #fff, inset 0 -0.375em 0 0 rgb(252 64 65 / 40%)',
+              //   '&:hover': {
+              //     boxShadow: 'inset 0 .8em 0 0 #fff, inset 0 -0.375em 0 0 rgb(252 64 65 / 40%)',
+              //     transition: 'all .2s ease-out',
+              //     color: '#fc4041',
+              //   },
+              //   transition: 'all .2s ease-out',
+              //   textDecoration: 'none',
+              //   color: '#33333',
+              //   margin: '0 .2rem',
+              // },
               section: {
                 a: {
                   boxShadow: 'none',

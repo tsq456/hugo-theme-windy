@@ -105,3 +105,4 @@ dist
 resources/_gen/*
 
 */.DS_Store
+themes/hugo-theme-windy/assets/scss/main.css

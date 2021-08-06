@@ -110,6 +110,9 @@ html.dark #waline .vloading svg {
     .global-underline {
         @apply bg-gradient-to-r from-accent to-accent bg-left-bottom bg-no-repeat transition-size duration-1000 bg-underlineNormal hover:bg-underlineHover
     }
+    .articleLink-underline {
+        @apply bg-gradient-to-r from-yellow-400 to-accent bg-left-bottom bg-no-repeat transition-size bg-linkNormal hover:bg-linkHover
+    }
 }
 
 @tailwind utilities;
@@ -124,6 +127,10 @@ html.dark #waline .vloading svg {
 
 .prose p {
     @apply font-primaryFont leading-9
+}
+
+.prose a {
+    @apply no-underline dark:text-darkPrimary articleLink-underline
 }
 
 .prose blockquote p {
