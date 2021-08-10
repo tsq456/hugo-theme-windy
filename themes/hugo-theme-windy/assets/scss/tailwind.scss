@@ -1,5 +1,13 @@
 @tailwind base;
 
+.menu-active #sideMenu {
+    @apply translate-x-0
+}
+.menu-active .main-wrapper {
+    @apply translate-x-[260px]
+}
+
+
 #footer {
     @apply text-darkSecondry
 }

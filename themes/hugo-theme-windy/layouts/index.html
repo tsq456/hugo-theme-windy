@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ $paginator := .Paginate (where .Site.RegularPages "Params.date" "!=" nil) }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Params.date" "!=" nil) }}
 
 <div class="bg-width shadow-bg overflow-hidden">
     {{- partial "navigation.html" . -}}
@@ -13,7 +13,9 @@
 
                 {{ if .Params.cover_image }}
                     <a href='{{ .RelPermalink }}'>
-                        <img src="{{ .Params.cover_image }}" class="w-[90%] mb-8 mx-auto rounded-md shadow-sm hover:shadow-xl ease-out duration-300" />
+                        <div class="w-[90%] mb-8 mx-auto overflow-hidden">
+                            <img src="{{ .Params.cover_image }}" class="shadow-sm hover:scale-[1.05] hover:rotate-2 ease-out duration-300" />
+                        </div>
                     </a>
                 {{ end }}
             </div>

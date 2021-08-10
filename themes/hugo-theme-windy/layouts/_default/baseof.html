@@ -4,9 +4,36 @@
         <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>    
         {{ partial "head.html" . }}
     </head>
-    <body class="bg-gray-50 antialiased dark:bg-darkBgDarker transition-all">
-        {{- block "main" . }}{{- end }}
+    <body class="bg-gray-50 antialiased dark:bg-darkBgDarker transition-all overflow-x-hidden">
+        <div id="sideMenu" class="md:hidden flex justify-center items-center w-[260px] h-[100vh] bg-gray-50 dark:bg-darkBgDarker absolute left-0 top-0 translate-x-[-100%] duration-300">
+            <ul class="mx-4 mt-10 mb-4 w-3/4 flex flex-col space-y-[20px] text-lg">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a class="dark:text-darkPrimary" href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
+                </li>
+                <hr class="border-dashed border-gray-300 dark:border-gray-700 last:hidden">
+                {{ end }}
+            </ul>
+        </div>
+        <div class="main-wrapper duration-300">
+            {{- block "main" . }}{{- end }}
+        </div>
         {{- partial "footer.html" . -}}
-        {{- partial "darkSwitcher.html" . -}}
     </body>
+    <script>
+        var slidingMenu = function() {
+            var menuToggle = document.getElementById("toggleMenu");
+            var body       = document.body;
+            var htmlElem   = document.querySelector('html');
+          
+            menuToggle.addEventListener('click', function(ev) {
+              ev.preventDefault();
+              htmlElem.classList.toggle("overflow-hidden");
+              body.classList.toggle('menu-active');
+            });
+          }
+          
+        slidingMenu();
+    </script>
 </html>
