@@ -771,6 +771,7 @@ video {
 }
 
 #toc.toc-hidden {
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -1606,8 +1607,16 @@ html.dark #waline .vloading svg {
   top: 0px;
 }
 
+.-right-2 {
+  right: -0.5rem;
+}
+
 .bottom-0 {
   bottom: 0px;
+}
+
+.-bottom-2 {
+  bottom: -0.5rem;
 }
 
 .float-right {
@@ -1655,11 +1664,6 @@ html.dark #waline .vloading svg {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .my-8 {
@@ -1743,6 +1747,10 @@ html.dark #waline .vloading svg {
   margin-right: 1.5rem;
 }
 
+.mb-\[6px\] {
+  margin-bottom: 6px;
+}
+
 .block {
   display: block;
 }
@@ -1765,10 +1773,6 @@ html.dark #waline .vloading svg {
 
 .grid {
   display: grid;
-}
-
-.contents {
-  display: contents;
 }
 
 .hidden {
@@ -1925,8 +1929,16 @@ html.dark #waline .vloading svg {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1983,6 +1995,10 @@ html.dark #waline .vloading svg {
   border-width: 1px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -2016,6 +2032,29 @@ html.dark #waline .vloading svg {
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 64, 65, var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2041,8 +2080,8 @@ html.dark #waline .vloading svg {
   padding: 1.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-4 {
@@ -2070,6 +2109,10 @@ html.dark #waline .vloading svg {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-2xl {
@@ -2126,6 +2169,11 @@ html.dark #waline .vloading svg {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2315,6 +2363,112 @@ html.dark #waline .vloading svg {
 
     src: local(''), url('../fonts/noto-serif-sc-v8-latin_chinese-simplified-700.woff2') format('woff2'), url('../fonts/noto-serif-sc-v8-latin_chinese-simplified-700.woff') format('woff')
   }
+}
+
+.before\:absolute::before {
+  content: "";
+  position: absolute;
+}
+
+.before\:-bottom-2::before {
+  content: "";
+  bottom: -0.5rem;
+}
+
+.before\:right-0::before {
+  content: "";
+  right: 0px;
+}
+
+.before\:bottom-\[6px\]::before {
+  content: "";
+  bottom: 6px;
+}
+
+.before\:bottom-\[-6px\]::before {
+  content: "";
+  bottom: -6px;
+}
+
+.before\:bottom-\[10px\]::before {
+  content: "";
+  bottom: 10px;
+}
+
+.before\:bottom-\[-10px\]::before {
+  content: "";
+  bottom: -10px;
+}
+
+.before\:bottom-\[-5px\]::before {
+  content: "";
+  bottom: -5px;
+}
+
+.before\:bottom-\[-8px\]::before {
+  content: "";
+  bottom: -8px;
+}
+
+.before\:contents::before {
+  content: "";
+  display: contents;
+}
+
+.before\:h-0::before {
+  content: "";
+  height: 0px;
+}
+
+.before\:w-0::before {
+  content: "";
+  width: 0px;
+}
+
+.before\:border-t-2::before {
+  content: "";
+  border-top-width: 2px;
+}
+
+.before\:border-r-2::before {
+  content: "";
+  border-right-width: 2px;
+}
+
+.before\:border-t-\[6px\]::before {
+  content: "";
+  border-top-width: 6px;
+}
+
+.before\:border-r-\[6px\]::before {
+  content: "";
+  border-right-width: 6px;
+}
+
+.before\:border-t-\[8px\]::before {
+  content: "";
+  border-top-width: 8px;
+}
+
+.before\:border-r-\[8px\]::before {
+  content: "";
+  border-right-width: 8px;
+}
+
+.before\:border-solid::before {
+  content: "";
+  border-style: solid;
+}
+
+.before\:border-t-\[\#740000\]::before {
+  content: "";
+  --tw-border-opacity: 1;
+  border-top-color: rgba(116, 0, 0, var(--tw-border-opacity));
+}
+
+.before\:border-r-\[transparent\]::before {
+  content: "";
+  border-right-color: transparent;
 }
 
 .last\:mb-0:last-child {

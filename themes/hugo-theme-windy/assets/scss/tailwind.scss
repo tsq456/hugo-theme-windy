@@ -28,7 +28,7 @@
     @apply opacity-100
 }
 #toc.toc-hidden {
-    @apply opacity-0
+    @apply opacity-0 invisible
 }
 @media screen and (max-width: 1300px) {
     #toc {

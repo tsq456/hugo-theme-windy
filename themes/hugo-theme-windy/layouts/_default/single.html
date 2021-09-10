@@ -17,20 +17,20 @@
           </g>
       </svg>
       </a> 
-    <span class="tags">
+    <div class="absolute -right-2 top-4">
       {{ with .Params.tags }}
         {{ range . }}
-        <div>
-          <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" >{{ . }}</a>
+        <div class="mb-2 text-right">
+          <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" class="inline-block mb-2 bg-accent p-1 text-sm text-white relative before:absolute before:bottom-[-8px] before:border-t-[8px] before:right-0 before:w-0 before:h-0 before:border-t-[#740000] before:border-solid before:border-r-[8px] before:border-r-[transparent]"># {{ . }}</a>
         </div>
         {{ end }}
       {{ end }}
-    </span>
+    </div>
     <div class="text-white text-center bottom-0 absolute pb-9 w-full bg-gradient-to-t from-blackGradient">
 
         {{ with .Params.categories }}
             {{ range . }}
-                <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="py-1 px-4 rounded-full border-solid border-white border hover:border-none hover:bg-accent hover:px-6 duration-300 ease-in">{{- . -}}</a>
+                <a href="{{ "/categories/" | absURL }}{{ . | urlize }}" class="py-1 px-4 rounded-full border-solid border-white border hover:border-none hover:bg-accent hover:px-6 duration-300 ease-in bg-black bg-opacity-20">{{- . -}}</a>
             {{ end }}
         {{ end }}
 
