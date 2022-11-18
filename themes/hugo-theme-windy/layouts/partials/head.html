@@ -14,7 +14,7 @@
       document.querySelector('html').classList.add("dark");
     }
 </script>
-<link rel="stylesheet" href="{{ relURL $styles }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+<link rel="stylesheet" href="{{ $styles | relURL }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 <link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />
 
 {{ if .Site.Params.enableGoogleAnalytics }} 
