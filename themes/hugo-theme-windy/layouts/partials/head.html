@@ -8,13 +8,13 @@
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 {{ template "_internal/opengraph.html" . }}
 
-{{ $styles:= resources.Get "/scss/main.css" | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $styles:= resources.Get "/scss/main.css" | resources.Minify }}
 <script>
     if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)"))) {
       document.querySelector('html').classList.add("dark");
     }
 </script>
-<link rel="stylesheet" href="{{ $styles | relURL }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+<link rel="stylesheet" href="{{ $styles }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 <link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />
 
 {{ if .Site.Params.enableGoogleAnalytics }} 
