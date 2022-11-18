@@ -2,172 +2,172 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
+    <loc>old.atutang.com/categories/</loc>
+    <lastmod>2022-11-18T13:19:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/tags/</loc>
+    <lastmod>2022-11-18T13:19:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/tags/%E6%9D%82%E8%AE%B0/</loc>
     <lastmod>2022-11-18T13:10:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>old.atutang.com/2021/07/bearism/</loc>
+    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2022-11-18T13:10:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/%E6%9D%82%E8%AE%B0/</loc>
+    <loc>old.atutang.com/</loc>
+    <lastmod>2022-11-18T13:19:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/2021/07/try-building-community-in-product/</loc>
+    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/2021/07/not-all-metrics-are-good-metrics/</loc>
+    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/tags/%E4%BA%A7%E5%93%81/</loc>
+    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/tags/%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/categories/%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2022-11-18T13:19:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/2021/06/my-father/</loc>
     <lastmod>2022-11-18T13:10:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/2021/07/bearism/</loc>
+    <loc>old.atutang.com/2021/05/what-are-your-design-maxims/</loc>
+    <lastmod>2022-11-18T13:19:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2022-11-18T13:19:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/tags/%E8%AE%BE%E8%AE%A1%E6%84%9F%E6%82%9F/</loc>
+    <lastmod>2022-11-18T13:19:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>old.atutang.com/2021/05/may-2021/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-11-18T13:10:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2022-11-18T13:10:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/2021/07/try-building-community-in-product/</loc>
+    <loc>old.atutang.com/categories/code/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/2021/07/not-all-metrics-are-good-metrics/</loc>
+    <loc>old.atutang.com/tags/hugo/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/%E4%BA%A7%E5%93%81/</loc>
+    <loc>old.atutang.com/2021/05/hugo-automatic-deploy/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/%E6%95%B0%E6%8D%AE/</loc>
+    <loc>old.atutang.com/2021/04/notion-redesign/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/categories/%E7%BF%BB%E8%AF%91/</loc>
+    <loc>old.atutang.com/tags/%E9%87%8D%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/2021/06/my-father/</loc>
-    <lastmod>2022-11-18T13:10:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/2021/05/what-are-your-design-maxims/</loc>
+    <loc>old.atutang.com/2021/03/how-to-count-total-visitors-number/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <loc>old.atutang.com/tags/%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/%E8%AE%BE%E8%AE%A1%E6%84%9F%E6%82%9F/</loc>
+    <loc>old.atutang.com/tags/nas/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/2021/05/may-2021/</loc>
+    <loc>old.atutang.com/2021/03/starting-manictime-server-on-docker/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/categories/code/</loc>
+    <loc>old.atutang.com/2021/03/how-to-build-a-game-shortcode/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/hugo/</loc>
+    <loc>old.atutang.com/2021/03/game-newbieguid-design/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/2021/05/hugo-automatic-deploy/</loc>
+    <loc>old.atutang.com/tags/%E5%B7%A5%E4%BD%9C/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/2021/04/notion-redesign/</loc>
+    <loc>old.atutang.com/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/%E9%87%8D%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>old.atutang.com/2021/03/business-page-design/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/2021/03/how-to-count-total-visitors-number/</loc>
+    <loc>old.atutang.com/tags/%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/%E6%8A%98%E8%85%BE/</loc>
+    <loc>old.atutang.com/categories/%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/nas/</loc>
+    <loc>old.atutang.com/about/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/2021/03/starting-manictime-server-on-docker/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/2021/03/how-to-build-a-game-shortcode/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/2021/03/game-newbieguid-design/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/tags/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/tags/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/2021/03/business-page-design/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/tags/%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/categories/%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/about/</loc>
-    <lastmod>2022-11-18T12:58:34+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>/posts/</loc>
+    <loc>old.atutang.com/posts/</loc>
     <lastmod>2022-11-18T12:58:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
