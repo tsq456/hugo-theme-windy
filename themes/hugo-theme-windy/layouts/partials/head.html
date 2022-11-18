@@ -8,7 +8,7 @@
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 {{ template "_internal/opengraph.html" . }}
 
-{{ $styles:= resources.Get "/scss/main.css" | resources.Minify }}
+{{ $styles:= resources.Get "/scss/main.css" }}
 <script>
     if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)"))) {
       document.querySelector('html').classList.add("dark");
