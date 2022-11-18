@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>设计 on 阿凸日记</title>
-    <link>old.atutang.com/tags/%E8%AE%BE%E8%AE%A1/</link>
+    <link>/tags/%E8%AE%BE%E8%AE%A1/</link>
     <description>Recent content in 设计 on 阿凸日记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 22 Mar 2021 20:29:23 +0800</lastBuildDate><atom:link href="old.atutang.com/tags/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Mar 2021 20:29:23 +0800</lastBuildDate><atom:link href="/tags/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于游戏新手设计</title>
-      <link>old.atutang.com/2021/03/game-newbieguid-design/</link>
+      <link>/2021/03/game-newbieguid-design/</link>
       <pubDate>Mon, 22 Mar 2021 20:29:23 +0800</pubDate>
       
-      <guid>old.atutang.com/2021/03/game-newbieguid-design/</guid>
+      <guid>/2021/03/game-newbieguid-design/</guid>
       <description>&lt;p&gt;新手阶段某种程度上就是游戏的脸面（当然更严谨的说游戏的美术才是游戏的脸面），特别在游戏品质已经越来越高的当下，新手引导对于玩家和产品都起到极其重要的作用：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;在产品侧&lt;/strong&gt;，游戏需要通过新手引导达成留存目的，后续更好实现其商业目标&lt;/li&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>游戏商业化界面设计</title>
-      <link>old.atutang.com/2021/03/business-page-design/</link>
+      <link>/2021/03/business-page-design/</link>
       <pubDate>Mon, 22 Mar 2021 20:29:23 +0800</pubDate>
       
-      <guid>old.atutang.com/2021/03/business-page-design/</guid>
+      <guid>/2021/03/business-page-design/</guid>
       <description>&lt;h2 id=&#34;目的&#34;&gt;目的&lt;/h2&gt;
 &lt;p&gt;由于数值投放及定价策略均不在本职能的可控范围内，所以我们的目的是通过改变&lt;strong&gt;框架层及界面层&lt;/strong&gt;来影响玩家判断，尽可能将商业化界面的诉求 —— 拉收 提升到新的高度。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://30924398.xyz:6001/images/2020/12/30/D1ip0DrRzJroDTn4f9dbd248de26f2ab.png#center&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
