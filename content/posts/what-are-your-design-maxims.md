@@ -7,7 +7,7 @@ tags:
 categories:
 - 翻译
 description: ''
-cover_image: https://img.atutang.com/what-are-your-design-maxims/1_3z9lpDa18UNE-vmA4bxDsQ.jpeg!loss/format/webp
+cover_image: "/images/contents/what-are-your-design-maxims/what-are-your-design-maxims.webp"
 comment: true
 
 ---
