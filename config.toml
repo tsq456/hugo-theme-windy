@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "old.atutang.com"
 languageCode = "zh-cn"
 title = "阿凸日记"
 theme = "hugo-theme-windy"
